@@ -322,15 +322,19 @@
 	<img
     width="40"
     alt="Angular Logo"
-    src="../assets/teo.jpg" width="300" 
+    src="../assets/teo_.jpg" width="300" 
      height="400"  />
   </div> 
 
+ 
   
+  <div *ngFor = "let post of posts">
+	<p>{{post.id}}</p>
+  </div>
 
 
-  <input type="hidden" #selection>
-
+  <button (click) = "loadPosts()" > test</button>
+  <button (click) = "unloadPosts()">test off</button>
   
 
   <!-- Terminal -->
