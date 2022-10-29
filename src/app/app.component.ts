@@ -15,7 +15,7 @@ export class AppComponent {
 
 posts: any[] = []
 loadPosts(){
-this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe((posts: any)=>
+this.http.get('http://localhost:8000/get_post_endpoint/').subscribe((posts: any)=>
 {
 this.posts = posts;
 console.log(posts)
