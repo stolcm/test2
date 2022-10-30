@@ -16,6 +16,7 @@
 <div>
   <button (click) = "loadPosts()" > test</button>
   <button (click) = "unloadPosts()">test off</button>
+  <button (click) = "postPost()"> add new </button>
   
 </div>
 
@@ -29,7 +30,7 @@
   </mat-card-title-group>
   <mat-card-content>
   <p>{{post.description}}</p>
-  <button class = " btn btn-warning">Edit</button> <button class = " btn btn-danger">Delete</button>
+  <button class = " btn btn-warning">Edit</button> <button class = " btn btn-danger" (click) = "deletePost(post.id)">Delete</button>
   </mat-card-content>  
    
 </mat-card></mat-grid-tile>
